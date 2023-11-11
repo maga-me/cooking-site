@@ -1,0 +1,96 @@
+.contact {
+    background: $mainColor;
+    padding: 30px 0;
+
+    &__title {
+        font-size: 26px;
+        color: $darkBaseColor;
+    }
+
+    &__cards {
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+        flex-wrap: wrap;
+
+        @media (max-width: 1140px) {
+            justify-content: space-around;
+        }
+    }
+
+    &__card {
+        padding: 20px;
+        border-radius: 12px;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 0 10px 2px $darkBaseColor;
+        transition: 400ms;
+        max-width: 500px;
+        width: 100%;
+        gap: 20px;
+        background: $mainColor;
+
+        // &:hover {
+        //     box-shadow: 0 0 14px 3px $accentColorND;
+
+        // }
+
+        // @media (max-width: 1140px) {
+        //     max-width: 400px;
+        // }
+
+        @media (max-width: 850px) {
+            width: 100%;
+        }
+    }
+
+    &__meet {
+
+        &-con {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+        }
+
+        &-cellphone,
+        &-mail {
+            display: flex;
+            align-items: center;
+            color: $baseColor;
+            font-size: 16px;
+            gap: 10px;
+
+            &:hover {
+                color: $darkBaseColor;
+            }
+        }
+    }
+
+    &__find {
+
+        &-list {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        &-item {
+            font-size: 18px;
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+    }
+
+    &__link {
+
+        color: $baseColor;
+
+        &:hover {
+            color: $darkBaseColor;
+        }
+    }
+}

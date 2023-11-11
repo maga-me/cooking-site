@@ -1,0 +1,119 @@
+.mealPage {
+    padding: 40px 0;
+    background: $mainColor;
+
+    &__main {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @media (max-width: 736px) {
+            flex-wrap: wrap;
+        }
+    }
+
+    &__info {
+        width: 700px;
+        padding: 20px;
+    }
+
+    &__img {
+        max-width: 400px;
+        margin-bottom: 30px;
+
+        @media (max-width: 850px) {
+            max-width: 250px;
+        }
+
+        @media (max-width: 736px) {
+            max-width: 100%;
+        }
+        
+    }
+
+    &__title {
+        font-size: 36px;
+        color: $darkBaseColor;
+        margin-bottom: 20px;
+    }
+
+    &__txt {
+        font-size: 18px;
+        color: $darkBaseColor;
+        line-height: 1.4;
+    }
+
+    &__inst {
+        font-size: 20px;
+        margin-bottom: 20px;
+        display: flex;
+        gap: 10px;
+
+        span {
+            font-weight: 700;
+            color: $darkBaseColor;
+        }
+    }
+
+    &__area,
+    &__category {
+        color: $baseColor;
+        transition: 400ms;
+
+        &:hover {
+            color: $accentColorST;
+        }
+
+    }
+
+    &__cook {
+        font-size: 22px;
+        color: $darkBaseColor;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+
+    &__ingredients {
+        margin-bottom: 30px;
+
+        &-intro {
+            font-size: 30px;
+            font-weight: 700;
+            color: $accentHoverColorND;
+            margin-bottom: 20px;
+        }
+    }
+
+    &__ingredient {
+        color: $darkBaseColor;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 1.5;
+
+        b {
+            color: $accentHoverColorND;
+        }
+    }
+
+
+    &__more {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        
+    }
+
+    &__YT {
+        max-width: 600px;
+        width: 100%;
+        color: $accentHoverColorND;
+        font-weight: 700;
+        font-size: 18px;
+
+        a {
+            color: $accentColorST;
+
+        }
+    }
+}

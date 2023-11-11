@@ -1,0 +1,28 @@
+.about {
+    background: $mainColor;
+    padding: 30px 0;
+
+    &__txt {
+        padding: 40px;
+        border-radius: 12px;
+        transition: 400ms;
+        font-size: 20px;
+        color: $baseColor;
+        line-height: 1.5;
+        text-align: justify;
+    }
+
+    &__contact {
+        text-align: center;
+        font-size: 36px;
+        color: $darkBaseColor;
+
+        &-router {
+            color: $accentColorST;
+        }
+
+        b {
+            font-size: 40px;
+        }
+    }
+}
